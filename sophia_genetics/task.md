@@ -17,7 +17,7 @@ From Figure 1, I understand that the current GUI is composed of:
 #### 2. Ideas for how the user could navigate the circos plot intuitively 
 _to look at both details and an overview as appropriate_
 
-
+![](https://raw.github.com/ig2gi/perso/master/sophia_genetics/circos_min.png?login=ig2gi&token=e4f8c2757d071f069abbebfc32ceaa5e)
 
 #### 3. An estimate for the time you would require to produce the circos functionality, 
 _and how you would go about it (what technologies would you choose)_
