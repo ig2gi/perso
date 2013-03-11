@@ -10,7 +10,7 @@
 ---
 
 
-()
+![](https://raw.github.com/ig2gi/perso/master/sophia_genetics/architecture.png?login=ig2gi&token=58043192f58c8153020f8a242057c7c6)
 
 
 
