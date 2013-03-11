@@ -6,6 +6,13 @@
 #### 1. Alternative methods to display the same data
 _as in Figure 1 (circos plot data + tabular data)_
 
+From Figure 1, I understand that the current GUI is composed of:
+- TabularData  (standard GUI)
+- Datavizualisation part:
+ - Overview (circos plot)
+ - Zoomed section
+ - Horizontal diagram of genes
+ 
 
 #### 2. Ideas for how the user could navigate the circos plot intuitively 
 _to look at both details and an overview as appropriate_
