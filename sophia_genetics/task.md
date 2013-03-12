@@ -40,9 +40,32 @@ Again, with a thorough knowledge of the data it would be easier to give proper n
 #### 3. An estimate for the time you would require to produce the circos functionality, 
 _and how you would go about it (what technologies would you choose)_
 
+> I think the choice of JavaFX seems a good choice, especially with regard to characteristics such as application packaging and ease of integration with the customer.  
+It seems that we can also make a very good standard user interface  (wide variety of built-in controls, tabular data, ...).  
+However, for the data visualization part, although we can implement it directly into JavaFX (with the graphics primitives available) I will not recommand this choice for the following reasons:
+- After reading some forums on the comparison between technologies / frameworks devoted to data visualization (such as processing, or d3.js js) and JavaFX, the advantage is clearly on the side of specialized technologies.
+- By experience, although expert in JAVA, I advocate the use of dynamic language and not strongly typed (python, javascript, ..) to realize data visualization. In addition, these languages ​​are quite testable like JAVA.
+- As you can embed Web content in JavaFX (webcomponent with webkit engine), the use of standards SVG + Javascript + as CSS can seem quite preferred with the following benefits:
+ - Standards
+ - Using the powerful graphical features of each standard (masking, animations, clipping, gradient, conditional styling, events, ...)
+ - Can develop (and deploy) the visualization engine independently of the GUI in JavaFX.
+ - You can use D3.js or other graphics framework
+ - web component (DOM)  and other JavaFX components can communicate each other.
 
 
 ![](https://raw.github.com/ig2gi/perso/master/sophia_genetics/architecture.png?login=ig2gi&token=58043192f58c8153020f8a242057c7c6)
+
+> We have to validate of course the performance of the javaFx web component (and PRISM graphic engine)  
+Regarding the time required to reproduce the functionality of circos.
+
+> I distinguish several aspects:
+- Basic graph
+- Animations
+- Interactivity with the user
+- Dynamic data
+
+> I will vote only on the implementation of graph circos (static) SVG + JavaScript + CSS + d3.js:  
+30j / h (javascript integration environment + unit tests +  frameworks)
 
 
 #### 4. What do you expect to be the bottleneck in producing the circos graphic dynamically 
