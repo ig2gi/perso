@@ -1,4 +1,3 @@
-
 #### 1. Alternative methods to display the same data
 _as in Figure 1 (circos plot data + tabular data)_
 
@@ -10,6 +9,12 @@ _as in Figure 1 (circos plot data + tabular data)_
  - Overview (circos plot)
  - Zoomed section
  - Horizontal diagram of genes
+ 
+> Some remarks in bulk:  
+- If the circos plot is only intended to navigate and to select an area of ​​chromozome, then it does not necessarily need to be present all the time. Once the selected area, the circos plot disappears leaving the user the task of looking in detail the part of the diagram of the genes.  
+- We can dynamically add information on circos plot (with layers that the user active or not)?  
+- Sunburst diagrams are ideal for representing data in a compact way. But we can add to this diagram other types of representation such as Chord diagram to increase the level of information in the graph.  
+- You have chosen a Sunburst Diagram, is the circular representation just a way to save space compared to a linear representation? Or is there a real value in terms of visual information? (see next question)  
  
 
 #### 2. Ideas for how the user could navigate the circos plot intuitively 
@@ -23,6 +28,7 @@ This part of visualization design should be done with a good knowledge of data b
 - Easy navigation?
 - Pattern recognitions
 - Discover correlations
+- Display informations
 - ... ?
 
 > However, I used your data from your example to make my own graph (with Nodebox3). Here the following result. 
@@ -67,7 +73,7 @@ Regarding the time required to reproduce the functionality of circos.
 - Dynamic data
 
 > I will vote only on the implementation of graph circos (static) SVG + JavaScript + CSS + d3.js:  
-30j / h (javascript integration environment + unit tests +  frameworks)
+20j / h (javascript integration environment + unit tests +  frameworks)
 
 
 #### 4. What do you expect to be the bottleneck in producing the circos graphic dynamically 
