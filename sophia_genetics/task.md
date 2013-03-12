@@ -1,10 +1,8 @@
-## Introduction
 
-
-
-## Tasks
 #### 1. Alternative methods to display the same data
 _as in Figure 1 (circos plot data + tabular data)_
+
+---
 
 > From Figure 1, I understand that the current GUI is composed of:
 - TabularData  (standard GUI)
@@ -16,6 +14,8 @@ _as in Figure 1 (circos plot data + tabular data)_
 
 #### 2. Ideas for how the user could navigate the circos plot intuitively 
 _to look at both details and an overview as appropriate_
+
+---
 
 > One of the most important parts of the project, as it determines the overall usability of the GUI and is the entry point for the user.
 It is very difficult to answer this question not knowing the business data. 
@@ -39,6 +39,8 @@ Again, with a thorough knowledge of the data it would be easier to give proper n
 
 #### 3. An estimate for the time you would require to produce the circos functionality, 
 _and how you would go about it (what technologies would you choose)_
+
+---
 
 > I think the choice of JavaFX seems a good choice, especially with regard to characteristics such as application packaging and ease of integration with the customer.  
 It seems that we can also make a very good standard user interface  (wide variety of built-in controls, tabular data, ...).  
@@ -71,6 +73,8 @@ Regarding the time required to reproduce the functionality of circos.
 #### 4. What do you expect to be the bottleneck in producing the circos graphic dynamically 
 _(ie in near real time) – are you confident it can be done ?_
 
+---
+
 > The number of data is not that important (30kb compressed), the network will not  be a bottleneck.
 So I see two main sources of bottleneck:
 - Graphical rendering
@@ -85,6 +89,3 @@ HS13: 1600 (snp) + 800 (coverage)
 with HS17 (x2), we arrive at a minimum of at least 5000 graphic elements. (counting a brutal way!).  
 
 > A good knowledge of technologies/frameworks used and a good modeling are the keys to have a good performance (and of course the engine PRISM itself!)
-
-## Conclusion
-
