@@ -71,6 +71,20 @@ Regarding the time required to reproduce the functionality of circos.
 #### 4. What do you expect to be the bottleneck in producing the circos graphic dynamically 
 _(ie in near real time) – are you confident it can be done ?_
 
+> The number of data is not that important (30kb compressed), the network will not  be a bottleneck.
+So I see two main sources of bottleneck:
+- Graphical rendering
+- Data mining
+
+> For the second, I do not know if there is data mining on the client (or only on the server, or not at all?).
+If the data is ready to be viewed directly without prior transformations (sorting, grouping, statistics, combinations, ...)  then the second point is not relevant.  
+Remains the first point, the graphics rendering.  
+JavaFX seems to have a new graphics engine (PRISM) on which we can count but remains to be tested!
+Although the data are not so many, it may still represent a large number of graphics units, for example:  
+HS13: 1600 (snp) + 800 (coverage)
+with HS17 (x2), we arrive at a minimum of at least 5000 graphic elements. (counting a brutal way!).  
+
+> A good knowledge of technologies/frameworks used and a good modeling are the keys to have a good performance (and of course the engine PRISM itself!)
 
 ## Conclusion
 
